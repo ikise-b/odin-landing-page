@@ -63,7 +63,7 @@ p {
   --dark-bg-color: #1F2937;
 
   --main-text-color: #F9FAF8;
-  --secondary-text-color: #E5E7EB;
+  --secondary-bg-color: #E5E7EB;
   --dark-text-color: #1F2937;
   --btn-bg-color: #3882F6;
 
@@ -162,10 +162,21 @@ nav {
 
 /* Main */
 
-.cards > .container {
+/* cards */
+.container-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0px 20px 0px 20px;
+  width: 100%;  
+}
+.cards > .container-main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.cards {
+  padding-block: 3rem;
 }
 
 .card-container {
@@ -174,10 +185,9 @@ nav {
   gap: 2rem;
 }
 
-main section .container > h2 {
+main section .container-main > h2 {
   font-size: var(--text-base);
   font-weight: 800;
-  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -195,4 +205,18 @@ main section .container > h2 {
   border-radius: 12px;
   height: 150px;
   border: 3px solid rgb(0, 153, 255);
+}
+
+/* quotes */
+.quotes {
+  background-color: var(--secondary-bg-color);
+  padding-block: 120px;
+  font-size: var(--text-base);
+  font-weight: 300;
+  color: var(--dark-text-color);
+}
+
+.quotes > .container-main > p:nth-child(2) {
+  text-align: end;
+  font-weight: 900;
 }
