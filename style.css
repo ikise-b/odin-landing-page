@@ -57,3 +57,17 @@ h6 {
 p {
   text-wrap: pretty;
 }
+
+:root {
+  --dark-bg-color: #1F2937;
+
+  --main-text-color: #F9FAF8;
+  --secondary-text-color: #E5E7EB;
+  --dark-text-color: #1F2937;
+  --btn-bg-color: #3882F6;
+
+  --text-sm: 18px;
+  --text-base: 24px;
+  --text-lg: 36px;
+  --text-xl: 48px;
+}
